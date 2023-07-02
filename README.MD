@@ -29,4 +29,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Каждый тестовый модуль включает в себя простой и понятный код, который демонстрирует конкретный принцип или паттерн.
 
+## License
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
