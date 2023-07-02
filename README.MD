@@ -12,9 +12,6 @@ Each test module contains clear and concise code that exemplifies a specific pri
 
 The primary goal of the "Code Examples: Portfolio of Test Modules with Design Principles" project is to provide practical examples and valuable resources for developers seeking to learn and apply design principles in their projects. Additionally, it allows me to demonstrate my skills and expertise in the field of software design.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 
 # Code Examples: Портфолио тестовых модулей с принципами проектирования
