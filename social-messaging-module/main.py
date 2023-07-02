@@ -1,9 +1,11 @@
 """
 Использованные принципы дизайна:
 1. Полиморфизм
-2. Single Responsibility Principle
-3. Принцип открытости/закрытости (Open/Closed Principle)
-4. Инверсия зависимостей (Dependency Inversion):
+2. Single Responsibility Principle - SRP
+3. Open/Closed Principle - OCP
+4. Liskov Substitution Principle - LSP
+5. Interface Segregation Principle - ISP
+6. Dependency Inversion) - DI
 
 AbstractSocialProvider - Определяет абстрактный метод send_direct_message, который должен быть
 реализован в производных классах FacebookProvider и InstagramProvider. Использование
@@ -20,6 +22,13 @@ Instagram. Класс SocialMediaMailingService отвечает за отпра
 провайдера социальных сетей, без изменения кода SocialMediaMailingService. Таким образом, класс
 SocialMediaMailingService открыт для расширения новыми провайдерами социальных сетей, но закрыт
 для изменений в своей основной логике.
+
+Классы FacebookProvider и InstagramProvider являются подтипами AbstractSocialProvider.
+Это означает, что они могут использоваться везде, где ожидается AbstractSocialProvider
+
+AbstractSocialProvider определяет общий интерфейс для всех социальных провайдеров, который включает
+только метод send_direct_message. Это позволяет клиентам использовать только те методы, которые им
+действительно нужны, не навязывая лишний функционал.
 
 Класс SocialMediaMailingService принимает в своем конструкторе абстрактный тип
 AbstractSocialProvider. Это позволяет инвертировать зависимость между SocialMediaMailingService
